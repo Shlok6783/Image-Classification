@@ -3,6 +3,10 @@
 ### Dataset Source:
 The dataset used for this project is sourced from [BioFors](https://github.com/vimal-isi-edu/BioFors). It comprises images belonging to four classes: BlotGel, FAC, Macroscopy, and Microscopy. Additionally, a Noneoftheabove category was added for images not belonging to any of the four primary categories.
 
+### Model Download Link:
+Get resnet50 model from link: https://drive.google.com/file/d/1vF-zvRT3CEVVNrWNrrbTP-WoQ2k-9wJE/view?usp=sharing 
+But for new dataset and more accuracy you can adjust hyperparameters and train model yourself (like for more number of epoches and increased dataset. Also use the files train_test_split.py, resnet50train.py & test_model.py(For ResNet50 transfer learning model) and cnntrain.ipynb(For our basic cnn with in-built oversampling for balancing data_set))
+
 ### Dependencies/ Packages Required for Training the Model:
 Ensure you have the following dependencies/libraries/models preinstalled:
 ```
