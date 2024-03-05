@@ -1,0 +1,390 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #000 !important;
+  }
+
+  *{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Crimson Pro', serif;
+    
+}
+
+  header {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+
+ #pre{
+    background: #000 url(./static/img/pre.gif) no-repeat center center;
+    background-size: 10%;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:100;
+  }
+
+  .logo img{
+    max-width: 105px;
+    max-height:50px;
+    border-radius:10px;
+  }
+
+  header .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.nav-item .nav-link{
+  font-size:20px;
+}
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-item a:hover {
+    color: #cfe2ff;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .section {
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 200px; 
+    background: url(/static/img/back.jpg);
+    background-size:cover;
+    background-position: cover;
+    padding-bottom: 60px;
+  }
+
+  .container {
+    .text-slide{
+      position: relative;
+      width:100%;
+      justify-content: space-between;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 180px; 
+  }
+    
+  }
+  
+
+  .text-side, .upload-side {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  h1{
+    font-size: 100px !important;
+    font-weight: 700;
+    margin: -3px 0;
+    text-align: center;
+    background: linear-gradient(45deg, #ff00ff,#00ffff,#e5ffff, #fff,#fff,#fff);
+    background-size: 600% 600%;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: neon 5s linear infinite; /* For Safari */
+  
+    }
+
+  button{
+    color: black !important;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 600% 600%;
+    animation: neon 5s linear infinite;
+  }
+
+  button:hover{
+    box-shadow: 0 0 5px white,
+    0 0 25px white;
+  }
+
+  @keyframes neon {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  p{
+    color: white;
+  }
+  
+  .upload-slide{
+    background-color: #81CCE4 !important;
+  }
+
+  @media (max-width: 768px) { /* Adjusts layout for smaller screens */
+    .container {
+      flex-direction: column; /* Stacks .text-side and .upload-side vertically */
+      align-items: center; /* Centers the items horizontally */
+    }
+    .section{
+      padding-top: 30px;
+    }
+    .text-side, .upload-side {
+      width: 100%;
+      /* Each side takes full width of the container */
+    }
+    .text-side{
+      padding:50px;
+    }
+   
+    .upload-side{
+      padding:0px;
+    }
+    h1{
+      font-size:50px !important;
+      text-align: center;
+      background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+      background-size: 600% 600%;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      animation: neon 5s linear infinite;
+    }
+    p{
+      text-align: center;
+      padding-top:10px;
+    }
+  }
+
+  
+  
+  
+  .animated-h1 {
+    padding-top: 50px;
+    font-size: 3em;
+    animation: fadeIn 1s ease-in-out;
+    color: rgb(158, 245, 246);
+    font-size: 60px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #upload-form {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  #image-input {
+    display: none;
+  }
+
+  .custom-upload {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .custom-upload:hover {
+    background-color: #f4f4f4;
+  }
+
+  .upload-icon {
+    font-size: 24px;
+    color: #007bff;
+  }
+
+  .upload-text {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 0;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #result {
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .feature-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .feature-list li {
+    margin-bottom: 30px;
+  }
+
+  .feature-list h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin-bottom: 1px;
+  }
+
+    #uploaded-image {
+      max-width: 100%;
+      max-height: 300px; /* Adjust as needed */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #uploaded-image-container {
+      position: relative;
+      text-align: center;
+      margin-top: 5px; /* Adjust as needed */
+   }
+   
+   @media only screen and (max-width: 767px) {
+  header {
+    padding: 10px 0;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 1px;
+  }
+
+  nav ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .animated-h1 {
+    padding-top: 20px;
+    font-size: 2.5em;
+  }
+
+  #upload-form {
+    margin-top: 20px;
+  }
+
+  .custom-upload {
+    padding: 15px;
+  }
+
+  .upload-icon {
+    font-size: 20px;
+  }
+
+  .upload-text {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  button {
+    padding: 8px 15px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+
+  .feature-list h3 {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 5px 0;
+  }
+}
+
+/* Keyframes for zoom-in effect */
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Applying the animation to h1 with class 'animated-h1' */
+.animated-h1 {
+  animation: zoomIn 0.5s ease-out forwards;
+}
+
+h2{
+  font-size: 55px !important;
+  font-weight:800;
+  padding-top:20px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white !important;
+  justify-content: center;
+}
+
