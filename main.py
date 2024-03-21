@@ -41,7 +41,7 @@ def upload():
     print(predictions)
 
     # Convert predictions to human-readable format
-    class_names = ['Blogs', 'FACS', 'Macroscopy', 'Microscopy', 'Negative(none of the 4 classes)']
+    class_names = ['Blots', 'FACS', 'Macroscopy', 'Microscopy', 'Negative(none of the 4 classes)']
     predicted_class = class_names[np.argmax(predictions)]
 
     # Delete the uploaded image after processing
